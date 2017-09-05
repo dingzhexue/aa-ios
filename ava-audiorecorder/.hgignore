@@ -1,0 +1,8 @@
+syntax: glob
+xcuserdata
+.DS_Store
+.idea
+lib
+AudioRecorder.xccheckout
+AudioRecorder/MainStoryboard.storyboard.orig.orig
+AVA Recorder.xcodeproj/project.xcworkspace/xcshareddata/AVA Recorder.xcscmblueprint
