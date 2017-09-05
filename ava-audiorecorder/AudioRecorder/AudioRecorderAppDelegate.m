@@ -182,6 +182,7 @@
     
     
 }
+
 -(void)enterPasscode
 {
     
@@ -195,8 +196,7 @@
     
     passCodeConfig.navigationBarBackgroundColor = [UIColor colorWithRed:0.32 green:0.75 blue:0.24 alpha:1.0];
     passCodeConfig.navigationBarTitleColor = [UIColor whiteColor];
-    NSLog(@"VC %@", [UIApplication sharedApplication].keyWindow.rootViewController
-);
+    NSLog(@"VC %@", [UIApplication sharedApplication].keyWindow.rootViewController);
     [Passcode showPasscodeInViewController:_currentViewController completion:^(BOOL success, NSError *error) {
         if (success && [Passcode isPasscodeSet]) {
             NSLog(@"PASSWORDS MATCH");
@@ -233,8 +233,10 @@
     if(![[NSUserDefaults standardUserDefaults]boolForKey:@"firstLaunch"])
     {
         [self displayWelcome];
-        //[self setPasscode];
+        
+        
     }
+    
 //    else if([_recordPermissionRequested  isEqual: @"YES"]){
 //        
 //    }else{

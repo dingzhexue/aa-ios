@@ -37,6 +37,8 @@ typedef NS_ENUM(NSInteger, UnlockErrorCodes)
 
 + (void)showPasscodeForChange:(UIViewController *)viewController completion:(PasscodeCompletionBlock) completion;
 
++ (void)showSplashPasscodeInViewController:(UIViewController *)viewController completion:(PasscodeCompletionBlock)completion;
+
 /**
  *  Remove the passcode from the keychain.
  */

@@ -21,7 +21,9 @@
     UILabel *_titleLabel;
     UILabel *_directions;
     UILabel *_directions2;
+    UILabel *_directions3;
     UILabel *_error;
+    UIImageView  *_markView;
     CustomPasscodeConfig *_config;
     NSString *identifier;
 }
@@ -30,11 +32,19 @@
     if (self = [super init]) {
         _delegate = delegate;
         _config = config;
+        
         _titleLabel = [[UILabel alloc]init];
         _directions = [[UILabel alloc]init];
         _directions2 = [[UILabel alloc]init];
+        _directions3 = [[UILabel alloc] init];
+        
         _error = [[UILabel alloc]init];
         _textFields = [[NSMutableArray alloc]init];
+        
+        
+        _markView = [[UIImageView alloc] init];
+        
+        
     }
     return self;
 }
@@ -61,7 +71,7 @@
     [self.view addSubview:_titleLabel];
     
     
-    _directions.frame = CGRectMake(15, 60, self.view.frame.size.width - 30, 90);
+    _directions.frame = CGRectMake(15, 70, self.view.frame.size.width - 30, 90);
     _directions.font = _config.instructionsFont;
     _directions.textColor = _config.descriptionColor;
     _directions.numberOfLines = 2;
@@ -69,13 +79,23 @@
     _directions.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     [self.view addSubview:_directions];
     
-    _directions2.frame = CGRectMake(15, 85, self.view.frame.size.width -30, 120);
+    _directions2.frame = CGRectMake(15, 95, self.view.frame.size.width -30, 120);
     _directions2.font = [_config.instructionsFont fontWithSize:16];
     _directions2.textColor = [UIColor redColor];
     _directions2.numberOfLines = 2;
     _directions2.textAlignment = NSTextAlignmentCenter;
     _directions2.autoresizingMask = UIViewAutoresizingFlexibleWidth;
     [self.view addSubview:_directions2];
+    
+    
+    _directions3.frame = CGRectMake(15, 95, self.view.frame.size.width - 30, 90);
+    _directions3.font = _config.instructionsFont;
+    _directions3.textColor = _config.descriptionColor;
+    _directions3.numberOfLines = 2;
+    _directions3.textAlignment = NSTextAlignmentCenter;
+    _directions3.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+    [self.view addSubview:_directions3];
+    
     
     _error.frame = CGRectMake(0, 210, 0, 0); // size set when text is set
     _error.font = _config.errorFont;
@@ -89,7 +109,10 @@
     _error.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
     [self.view addSubview:_error];
     
-    CGFloat y_padding = 170;
+    _markView.frame = CGRectMake((self.view.frame.size.width - 40)/2, 75, 40, 40);
+    [self.view addSubview:_markView];
+    
+    CGFloat y_padding = 180;
     CGFloat itemWidth = 24;
     CGFloat space = 20;
     CGFloat totalWidth = (itemWidth * 4) + (space * 3);
@@ -205,6 +228,15 @@
 - (void)setDirections2:(NSString *)directions2 {
     _directions2.text = directions2;
 }
+
+- (void)setDirections3:(NSString *)directions3 {
+    _directions3.text = directions3;
+}
+
+-(void)setMarkImage{
+    [_markView setImage:[UIImage imageNamed:@"mark.png"]];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

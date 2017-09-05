@@ -10,10 +10,3 @@ Hockeyapp (https://www.hockeyapp.net) is used to distribute beta builds for test
 
 ### AVA ###
 An AVA account is required in order to upload recordings from the app.
-
-### Coding Prerequisites ###
-CocoPods is required
-
-- https://cocoapods.org/
-- $ sudo gem install cocoapods
-- in repo $ pod install

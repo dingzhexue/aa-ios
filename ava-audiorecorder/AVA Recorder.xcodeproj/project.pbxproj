@@ -105,6 +105,7 @@
 		DFEC27CE1D64BAAC00A20737 /* DTTimePeriodGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEC27C51D64BAAC00A20737 /* DTTimePeriodGroup.m */; };
 		DFEC27CF1D64BAAC00A20737 /* NSDate+DateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = DFEC27C71D64BAAC00A20737 /* NSDate+DateTools.m */; };
 		DFEC27D11D64BFEE00A20737 /* DateTools.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = DFEC27D01D64BFEE00A20737 /* DateTools.bundle */; };
+		EC43E7821F5EE068000C697E /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC43E7811F5EE068000C697E /* MainStoryboard_iPad.storyboard */; };
 		FC00580B19A133D900B87525 /* lock.png in Resources */ = {isa = PBXBuildFile; fileRef = FC00580A19A133D900B87525 /* lock.png */; };
 		FC054ABF1C20ECB100B3A4EF /* AFAutoPurgingImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = FC054AB91C20ECB100B3A4EF /* AFAutoPurgingImageCache.m */; };
 		FC054AC01C20ECB100B3A4EF /* AFImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = FC054ABB1C20ECB100B3A4EF /* AFImageDownloader.m */; };
@@ -302,6 +303,7 @@
 		DFEC27C61D64BAAC00A20737 /* NSDate+DateTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+DateTools.h"; sourceTree = "<group>"; };
 		DFEC27C71D64BAAC00A20737 /* NSDate+DateTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+DateTools.m"; sourceTree = "<group>"; };
 		DFEC27D01D64BFEE00A20737 /* DateTools.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = DateTools.bundle; path = "../Downloads/DateTools-master 2/DateTools/DateTools.bundle"; sourceTree = "<group>"; };
+		EC43E7811F5EE068000C697E /* MainStoryboard_iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		FC00580A19A133D900B87525 /* lock.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = lock.png; sourceTree = "<group>"; };
 		FC054AB81C20ECB100B3A4EF /* AFAutoPurgingImageCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = AFAutoPurgingImageCache.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
 		FC054AB91C20ECB100B3A4EF /* AFAutoPurgingImageCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; lineEnding = 0; path = AFAutoPurgingImageCache.m; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objc; };
@@ -539,6 +541,7 @@
 		3016439B16E0CBAF00D64C90 /* AudioRecorder */ = {
 			isa = PBXGroup;
 			children = (
+				EC43E7811F5EE068000C697E /* MainStoryboard_iPad.storyboard */,
 				23F5219D170AE6F0006CD3A1 /* AudioRecorder.entitlements */,
 				301643A416E0CBAF00D64C90 /* AudioRecorderAppDelegate.h */,
 				301643A516E0CBAF00D64C90 /* AudioRecorderAppDelegate.m */,
@@ -884,6 +887,7 @@
 				3007C87B16E5F042008AE745 /* check_box.png in Resources */,
 				3007C87C16E5F042008AE745 /* check_box@2x.png in Resources */,
 				FC624DDC1C306BFA0030AC1E /* record_btn.png in Resources */,
+				EC43E7821F5EE068000C697E /* MainStoryboard_iPad.storyboard in Resources */,
 				DFEC27C81D64BAAC00A20737 /* DateTools.bundle in Resources */,
 				3007C87D16E5F042008AE745 /* check_tick_box.png in Resources */,
 				3007C87E16E5F042008AE745 /* check_tick_box@2x.png in Resources */,
@@ -922,13 +926,16 @@
 			files = (
 			);
 			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AVA Recorder-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 		D6D8DFF3DF1091E25891D0E9 /* [CP] Copy Pods Resources */ = {
@@ -1128,6 +1135,7 @@
 				PRODUCT_NAME = "AVA Recorder";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/lib/**";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1160,6 +1168,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.recap.avarecorder;
 				PRODUCT_NAME = "AVA Recorder";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				USER_HEADER_SEARCH_PATHS = "$(SRCROOT)/lib/**";
 				WRAPPER_EXTENSION = app;
 			};

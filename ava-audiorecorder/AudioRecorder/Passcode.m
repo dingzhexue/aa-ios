@@ -71,6 +71,12 @@ NSString* const PDUnlockErrorDomain = @"com.peopledesigns.error.unlock";
     [instance showPasscodeInViewController:viewController completion:completion];
 }
 
+
++ (void)showSplashPasscodeInViewController:(UIViewController *)viewController completion:(PasscodeCompletionBlock)completion {
+    [instance showSplashPasscodeInViewController:viewController completion:completion];
+}
+
+
 + (void)showPasscodeForChange:(UIViewController *)viewController completion:(PasscodeCompletionBlock) completion{
     [instance showPasscodeForChange:viewController completion:completion];
 }
@@ -134,6 +140,15 @@ NSString* const PDUnlockErrorDomain = @"com.peopledesigns.error.unlock";
 //        [self openPasscodeWithMode:1 viewController:viewController];
 //    }
 }
+
+- (void)showSplashPasscodeInViewController:(UIViewController *)viewController completion:(PasscodeCompletionBlock)completion {
+    //NSAssert([self isPasscodeSet], @"No passcode set");
+    
+    [self openPasscodeWithMode:3 viewController:viewController];
+    
+    _completion = completion;
+}
+
 
 - (void)showPasscodeForChange:(UIViewController *)viewController completion:(PasscodeCompletionBlock) completion
 {
@@ -234,6 +249,13 @@ NSString* const PDUnlockErrorDomain = @"com.peopledesigns.error.unlock";
         [_pinViewController setBarButton:@"yes"];
         [_pinViewController setDirections:NSLocalizedString(@"Enter your AVA Recorder passcode to proceed.", nil)];
         
+        
+    }else if(_mode == 3){
+        
+        [_pinViewController setHeading:NSLocalizedString(@"", nil)];
+        [_pinViewController setBarButton:@"no"];
+        [_pinViewController setMarkImage];
+        [_pinViewController setDirections3:NSLocalizedString(@"Welcome! \n Enter your passcode to continue.", nil)];
     }
 }
 
@@ -266,7 +288,7 @@ NSString* const PDUnlockErrorDomain = @"com.peopledesigns.error.unlock";
                 return;
             }
         }//mode 1 = App is locked
-    } else if (_mode == 1) {
+    } else if (_mode == 1 || _mode == 3) {
         if ([code isEqualToString:[[PDKeychain defaultKeychain] objectForKey:KEYCHAIN_NAME]]) {
             [self closeAndNotify:YES withError:nil];
         } else {

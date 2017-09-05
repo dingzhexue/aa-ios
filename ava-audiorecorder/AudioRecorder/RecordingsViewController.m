@@ -138,7 +138,8 @@ static NSInteger lastSelectedCellIndex;
     {
         return;
     } else{
-        [self enterPasscode];
+        [self displaySplashPasscode];
+        //[self enterPasscode];
     }
 //    if (![[PDKeychain defaultKeychain]objectForKey:KEY_ENCRYPTION]) {
 //        NSString *encryptionPassString = [self randomStringWithLength:30];
@@ -206,26 +207,8 @@ static NSInteger lastSelectedCellIndex;
     [self setListLabel:nil];
     [super viewDidUnload];
 }
-////Method to create random string for encryption/decryption password
-//-(NSString*)randomStringWithLength: (int)length
-//{
-//    NSString *letters = @"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-//    NSMutableString *randomString = [NSMutableString stringWithCapacity:length];
-//    
-//    for(int i=0; i<length; i++){
-//        [randomString appendFormat:@"%C", [letters characterAtIndex: arc4random_uniform([letters length])]];
-//    }
-//    return randomString;
-//}
 
-//-(void)displayWelcome {
-//    WelcomeViewController *welcomeVC = [self.storyboard instantiateViewControllerWithIdentifier:@"WelcomeViewController"];
-//    welcomeVC.navigationItem.hidesBackButton = YES;
-//    [self.navigationController pushViewController:welcomeVC animated:YES];
-//    
-//   
-//
-//}
+
 -(void)setPasscode
 {
     CustomPasscodeConfig *passCodeConfig = [[CustomPasscodeConfig alloc]init];
@@ -279,7 +262,7 @@ static NSInteger lastSelectedCellIndex;
     }];
     
 }
--(void)enterPasscode
+-(void)displaySplashPasscode
 {
    
         CustomPasscodeConfig *passCodeConfig = [[CustomPasscodeConfig alloc]init];
@@ -291,7 +274,7 @@ static NSInteger lastSelectedCellIndex;
         
         passCodeConfig.navigationBarBackgroundColor = [UIColor colorWithRed:0.32 green:0.75 blue:0.24 alpha:1.0];
         passCodeConfig.navigationBarTitleColor = [UIColor whiteColor];
-        [Passcode showPasscodeInViewController:self completion:^(BOOL success, NSError *error) {
+        [Passcode showSplashPasscodeInViewController:self completion:^(BOOL success, NSError *error) {
             if (success && [Passcode isPasscodeSet]) {
                 NSLog(@"PASSWORDS MATCH");
                 [self dismissViewControllerAnimated:YES completion:nil];
@@ -304,6 +287,29 @@ static NSInteger lastSelectedCellIndex;
         }];
 }
 
+-(void) enterPasscode{
+    
+    CustomPasscodeConfig *passCodeConfig = [[CustomPasscodeConfig alloc]init];
+    
+    passCodeConfig.navigationBarTitle = @"AVA Recorder";
+    passCodeConfig.identifier = @"changePass";
+    [Passcode setConfig:passCodeConfig];
+    
+    passCodeConfig.navigationBarBackgroundColor = [UIColor colorWithRed:0.32 green:0.75 blue:0.24 alpha:1.0];
+    passCodeConfig.navigationBarTitleColor = [UIColor whiteColor];
+    [Passcode showPasscodeInViewController:self completion:^(BOOL success, NSError *error) {
+        if (success && [Passcode isPasscodeSet]) {
+            NSLog(@"PASSWORDS MATCH");
+            [self dismissViewControllerAnimated:YES completion:nil];
+        }else{
+            
+            passCodeConfig.identifier = @"";
+            [self setPasscode];
+            //NSLog(@"ERROR:%@", error.localizedDescription);
+        }
+    }];
+    
+}
 #pragma mark- UITableView Delegate methods
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView

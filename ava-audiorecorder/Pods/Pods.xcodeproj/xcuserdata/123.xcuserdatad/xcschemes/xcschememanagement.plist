@@ -4,15 +4,29 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>AVA Recorder.xcscheme</key>
+		<key>M13ProgressSuite.xcscheme</key>
 		<dict>
+			<key>isShown</key>
+			<false/>
 			<key>orderHint</key>
 			<integer>0</integer>
+		</dict>
+		<key>Pods-AVA Recorder.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+			<key>orderHint</key>
+			<integer>1</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3016439016E0CBAF00D64C90</key>
+		<key>7A1DBFEFBD1BADC3B8AD1AA34704E9FC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>BDB45DD6D41488A346190E17DEF63592</key>
 		<dict>
 			<key>primary</key>
 			<true/>
