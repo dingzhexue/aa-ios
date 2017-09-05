@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0085D3DD26B2CB09AB89DBFC05A175D1 /* M13ProgressViewImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D80A53A9B9AD050BE02D74270E735B5 /* M13ProgressViewImage.m */; };
+		06BCAC664D0E7E977CF43150143D11CE /* UIApplication+M13ProgressSuite.m in Sources */ = {isa = PBXBuildFile; fileRef = 791B133DA61C13409E8D1FDE5ED06308 /* UIApplication+M13ProgressSuite.m */; };
+		1A124943AF21807C71BDA295135765B1 /* M13ProgressViewSegmentedRing.m in Sources */ = {isa = PBXBuildFile; fileRef = D3C3FE73E71F5979B6D4DA995BF3C7BB /* M13ProgressViewSegmentedRing.m */; };
+		23411D00373CFFEC7CFD761262A7796F /* M13ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = CB18B68AD961459176D37DD2436A83BB /* M13ProgressHUD.m */; };
+		284C694DEC772709AC30C4F716679890 /* M13ProgressViewRadiative.h in Headers */ = {isa = PBXBuildFile; fileRef = 4ED51E964FBF87F94F07E63E70173C1C /* M13ProgressViewRadiative.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2DE48183D5331B20279736F9D8F01AFC /* M13ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 20225408D2B499C66004AA5B6C2B2985 /* M13ProgressView.m */; };
+		2F6085166A2CDCE306BBE2DDDF737BE8 /* M13ProgressViewSegmentedBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 8369A0CC442B624543D56B7E44DA22C4 /* M13ProgressViewSegmentedBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2FA1225772B1465912FC130D9AA70512 /* M13ProgressViewImage.h in Headers */ = {isa = PBXBuildFile; fileRef = B972A2A0FCA73270AB681313636889A5 /* M13ProgressViewImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		37AD6D1BC7A7B63C2BA7B38DB1B7A1F5 /* M13ProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 10C77057036EE504DC52B895BC0B9073 /* M13ProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38D8BB7592EE13B39C55122AE5C81D0E /* M13ProgressViewBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 79B56D0B7F073303B53E3310956F0481 /* M13ProgressViewBar.m */; };
+		3CE218638D274EB343D3800A33FA7569 /* UIApplication+M13ProgressSuite.h in Headers */ = {isa = PBXBuildFile; fileRef = 174BBB2D0F05684D61DE95A84B45E71C /* UIApplication+M13ProgressSuite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E44CBB7E0BE7F56C86EE4F69C0A092A /* M13ProgressViewFilteredImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0CBD90775A1953FE62BF041E6E560171 /* M13ProgressViewFilteredImage.m */; };
+		43EF520D16B42A522357F9BDF7EAC1DD /* M13ProgressViewSegmentedBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 588E1BFFABF04DAF0D8D45A33070264F /* M13ProgressViewSegmentedBar.m */; };
+		4767F697CD3F2B59EF4E421FABE74D6E /* M13ProgressViewPie.h in Headers */ = {isa = PBXBuildFile; fileRef = F096BEE4CD6711A76777B63D224A3096 /* M13ProgressViewPie.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		49277DC95F76C6B3A6A67151D1385500 /* M13ProgressConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = 259C9C849B2FAE53B92FF7BDDA021BB1 /* M13ProgressConsole.m */; };
+		59D998EB0981481B2F8DCB4E2E49DFB5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E57C8C2E69B48448FE5E948355809CEC /* UIKit.framework */; };
+		5F5F82F0074D04D16AB53247CEB6C37C /* UINavigationController+M13ProgressViewBar.h in Headers */ = {isa = PBXBuildFile; fileRef = E97D18344148FA05F7E20B528BB593E1 /* UINavigationController+M13ProgressViewBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		675F929CA37E9701E3630DE6BC15A57F /* UINavigationController+M13ProgressViewBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F2643C6CDD86AF593FBEB570C9B554E2 /* UINavigationController+M13ProgressViewBar.m */; };
+		7A3B1696C79DC77240661DF398681AF5 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CDF149A611C414433109F784E363DFD5 /* Accelerate.framework */; };
+		7B57B376AC8E3D7286AF7CE1C810B83B /* Pods-AVA Recorder-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5C15C0D67F14B747139E2EE5D1D6DDE9 /* Pods-AVA Recorder-dummy.m */; };
+		87F5FC147F2D6F31849F6746D53FE827 /* M13ProgressViewMetroDotPolygon.m in Sources */ = {isa = PBXBuildFile; fileRef = EDD8914756BD0E191EB130503595E802 /* M13ProgressViewMetroDotPolygon.m */; };
+		8A42701E6AF396D383ECC67C09567200 /* M13ProgressSuite-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 80F486C6B48FD998B851B5E9FBC7E695 /* M13ProgressSuite-dummy.m */; };
+		8C4F5BEB11C839B2E36045A8A96BD4CE /* M13ProgressViewFilteredImage.h in Headers */ = {isa = PBXBuildFile; fileRef = EA98B403462EEEA918539D11E71A3527 /* M13ProgressViewFilteredImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		92A9A46A9A1330BD19A08804FAA0D9EE /* M13ProgressViewStripedBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A7E2554FBCD28EAB2A8AC6AEE725C460 /* M13ProgressViewStripedBar.m */; };
+		98FF79A5FD2EBF34ABE949E78EFE7803 /* UIImage+ImageEffects.h in Headers */ = {isa = PBXBuildFile; fileRef = CF9ADE9C6DCF365C0FA1639E385390C2 /* UIImage+ImageEffects.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A1820FEBBF042DC6D946AEA50BB12A1 /* M13ProgressViewBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 83FA7B6AF272603549F315C02B047F3C /* M13ProgressViewBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9A29DCD381E5E009BE98400CC426768A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19284432F4F63CE2CF214F8A2526D099 /* CoreGraphics.framework */; };
+		A0ACA8BFF6A0BF1FF85EF113B91335A6 /* M13ProgressViewMetroDotPolygon.h in Headers */ = {isa = PBXBuildFile; fileRef = F991B2D957505BA75D14F5DE33569E98 /* M13ProgressViewMetroDotPolygon.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A16EC392822DEC34F1F870F7CFCBC0C7 /* M13ProgressViewMetro.m in Sources */ = {isa = PBXBuildFile; fileRef = 8A2D6392B74FDDFD634C1D5D15720DAB /* M13ProgressViewMetro.m */; };
+		A8764F43BF496466A81D854D37945E67 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC10E6C4EAB2DE597552CCAE68DAE9FC /* Foundation.framework */; };
+		AA3710FB5A3D357B38A3B62B1612CE6A /* CoreImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E3CAF77EA9E6E8632DB12DD8E7911A9 /* CoreImage.framework */; };
+		AA802524153083E8D1274439E9E51615 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FDD83F805614E3C7266567D867AB9E0 /* QuartzCore.framework */; };
+		AA8657572F1AF74F280B03F644129657 /* M13ProgressViewBorderedBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D835452CF132F96ED3455D0D2060672 /* M13ProgressViewBorderedBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B045685B5B30B139A07176B585031C71 /* M13ProgressViewPie.m in Sources */ = {isa = PBXBuildFile; fileRef = 04437869F692974AC92A63FD2A7F350D /* M13ProgressViewPie.m */; };
+		B2724C3CFE9C77EC8E6980AFF3869AB5 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = DC1B4C19904F21380215A46BB63C0614 /* UIImage+ImageEffects.m */; };
+		B7E3D801920F436FDDDA9B49730D4E1B /* M13ProgressViewRing.h in Headers */ = {isa = PBXBuildFile; fileRef = AB8631F7601C985BE20E5669B1AA16DC /* M13ProgressViewRing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C249D839B536D71A5EA6A4BBF0132BE3 /* M13ProgressViewLetterpress.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F19EFE9B4B7D2CD10B75D2F6D743239 /* M13ProgressViewLetterpress.m */; };
+		CC598A2A06D29B9BDD63D5282D942296 /* M13ProgressViewSegmentedRing.h in Headers */ = {isa = PBXBuildFile; fileRef = 360C735ADB57A0935E1C3FDF65EB6D56 /* M13ProgressViewSegmentedRing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5EAB6FF212B2BE8AA8814281F74523A /* M13ProgressViewStripedBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 7210A0DCDBA3ADBC98DB028EDD07AD24 /* M13ProgressViewStripedBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D6725892DAC54BB0A45C4BBC39531A6E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC10E6C4EAB2DE597552CCAE68DAE9FC /* Foundation.framework */; };
+		DB87A56225045BF6975B1515BBBFF2C8 /* M13ProgressViewRing.m in Sources */ = {isa = PBXBuildFile; fileRef = EBC37A06A1C278111F86D00B0170FA44 /* M13ProgressViewRing.m */; };
+		DC61E79DB7C29A04BDBE32E63AA1D99F /* M13ProgressViewRadiative.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BA0C39D3E4305EB1ED515708D194963 /* M13ProgressViewRadiative.m */; };
+		DDF77D6617B736D4D5FE616FBA9BB1EE /* M13ProgressConsole.h in Headers */ = {isa = PBXBuildFile; fileRef = 76CFB6E6A95AA31572C54EFC08C6FDDE /* M13ProgressConsole.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		ED6ECDAC666C83CB13B7ECAB19641C20 /* M13ProgressViewLetterpress.h in Headers */ = {isa = PBXBuildFile; fileRef = DE2E9CF7ACA5C17E1B229AF01B976209 /* M13ProgressViewLetterpress.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EFB1851BB5D96DC9C95461301C1F73FA /* M13ProgressViewBorderedBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F660C46A715602DB83F46AB0AF9655 /* M13ProgressViewBorderedBar.m */; };
+		F462278FF31AADADC6C5803231C48F4C /* M13ProgressViewMetro.h in Headers */ = {isa = PBXBuildFile; fileRef = 98A07A9E2EFDC40D814CFC3E62A90CFF /* M13ProgressViewMetro.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FB5D1E8F50E7878F89EE4946AF10D734 /* M13ProgressView.h in Headers */ = {isa = PBXBuildFile; fileRef = CCFE8913FF732302E8DF1AC7A0845871 /* M13ProgressView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		10C95C62F584F624E214B99E226FF9F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BDB45DD6D41488A346190E17DEF63592;
+			remoteInfo = M13ProgressSuite;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		04437869F692974AC92A63FD2A7F350D /* M13ProgressViewPie.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = M13ProgressViewPie.m; path = Classes/ProgressViews/M13ProgressViewPie.m; sourceTree = "<group>"; };
+		0728D9FE4D5300083E7BA0918BC13045 /* Pods-AVA Recorder-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AVA Recorder-acknowledgements.plist"; sourceTree = "<group>"; };
+		0CBD90775A1953FE62BF041E6E560171 /* M13ProgressViewFilteredImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = M13ProgressViewFilteredImage.m; path = Classes/ProgressViews/M13ProgressViewFilteredImage.m; sourceTree = "<group>"; };
+		0D80A53A9B9AD050BE02D74270E735B5 /* M13ProgressViewImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = M13ProgressViewImage.m; path = Classes/ProgressViews/M13ProgressViewImage.m; sourceTree = "<group>"; };
+		10C77057036EE504DC52B895BC0B9073 /* M13ProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = M13ProgressHUD.h; path = Classes/HUD/M13ProgressHUD.h; sourceTree = "<group>"; };
+		174BBB2D0F05684D61DE95A84B45E71C /* UIApplication+M13ProgressSuite.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+M13ProgressSuite.h"; path = "Classes/Application/UIApplication+M13ProgressSuite.h"; sourceTree = "<group>"; };
+		19284432F4F63CE2CF214F8A2526D099 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		20225408D2B499C66004AA5B6C2B2985 /* M13ProgressView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = M13ProgressView.m; path = Classes/ProgressViews/M13ProgressView.m; sourceTree = "<group>"; };
+		259C9C849B2FAE53B92FF7BDDA021BB1 /* M13ProgressConsole.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = M13ProgressConsole.m; path = Classes/Console/M13ProgressConsole.m; sourceTree = "<group>"; };
+		2780A277EE25BDB0760F5165E6493BD8 /* Pods-AVA Recorder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AVA Recorder.debug.xcconfig"; sourceTree = "<group>"; };
+		360C735ADB57A0935E1C3FDF65EB6D56 /* M13ProgressViewSegmentedRing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = M13ProgressViewSegmentedRing.h; path = Classes/ProgressViews/M13ProgressViewSegmentedRing.h; sourceTree = "<group>"; };
+		4141DECBDC0D7532D3FBE4E9B8BB918F /* libPods-AVA Recorder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-AVA Recorder.a"; path = "libPods-AVA Recorder.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4ED51E964FBF87F94F07E63E70173C1C /* M13ProgressViewRadiative.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = M13ProgressViewRadiative.h; path = Classes/ProgressViews/M13ProgressViewRadiative.h; sourceTree = "<group>"; };
+		4F19EFE9B4B7D2CD10B75D2F6D743239 /* M13ProgressViewLetterpress.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = M13ProgressViewLetterpress.m; path = Classes/ProgressViews/M13ProgressViewLetterpress.m; sourceTree = "<group>"; };
+		50350DC941EC2286469539D5AF2DBF47 /* libM13ProgressSuite.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libM13ProgressSuite.a; path = libM13ProgressSuite.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		588E1BFFABF04DAF0D8D45A33070264F /* M13ProgressViewSegmentedBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = M13ProgressViewSegmentedBar.m; path = Classes/ProgressViews/M13ProgressViewSegmentedBar.m; sourceTree = "<group>"; };
+		5BA0C39D3E4305EB1ED515708D194963 /* M13ProgressViewRadiative.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = M13ProgressViewRadiative.m; path = Classes/ProgressViews/M13ProgressViewRadiative.m; sourceTree = "<group>"; };
+		5C15C0D67F14B747139E2EE5D1D6DDE9 /* Pods-AVA Recorder-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AVA Recorder-dummy.m"; sourceTree = "<group>"; };
+		5D835452CF132F96ED3455D0D2060672 /* M13ProgressViewBorderedBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = M13ProgressViewBorderedBar.h; path = Classes/ProgressViews/M13ProgressViewBorderedBar.h; sourceTree = "<group>"; };
+		63F660C46A715602DB83F46AB0AF9655 /* M13ProgressViewBorderedBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = M13ProgressViewBorderedBar.m; path = Classes/ProgressViews/M13ProgressViewBorderedBar.m; sourceTree = "<group>"; };
+		7210A0DCDBA3ADBC98DB028EDD07AD24 /* M13ProgressViewStripedBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = M13ProgressViewStripedBar.h; path = Classes/ProgressViews/M13ProgressViewStripedBar.h; sourceTree = "<group>"; };
+		76CFB6E6A95AA31572C54EFC08C6FDDE /* M13ProgressConsole.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = M13ProgressConsole.h; path = Classes/Console/M13ProgressConsole.h; sourceTree = "<group>"; };
+		791B133DA61C13409E8D1FDE5ED06308 /* UIApplication+M13ProgressSuite.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+M13ProgressSuite.m"; path = "Classes/Application/UIApplication+M13ProgressSuite.m"; sourceTree = "<group>"; };
+		79B56D0B7F073303B53E3310956F0481 /* M13ProgressViewBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = M13ProgressViewBar.m; path = Classes/ProgressViews/M13ProgressViewBar.m; sourceTree = "<group>"; };
+		80F486C6B48FD998B851B5E9FBC7E695 /* M13ProgressSuite-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "M13ProgressSuite-dummy.m"; sourceTree = "<group>"; };
+		8369A0CC442B624543D56B7E44DA22C4 /* M13ProgressViewSegmentedBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = M13ProgressViewSegmentedBar.h; path = Classes/ProgressViews/M13ProgressViewSegmentedBar.h; sourceTree = "<group>"; };
+		83FA7B6AF272603549F315C02B047F3C /* M13ProgressViewBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = M13ProgressViewBar.h; path = Classes/ProgressViews/M13ProgressViewBar.h; sourceTree = "<group>"; };
+		857ABC5EE3228B10072033C92BD288A6 /* M13ProgressSuite-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "M13ProgressSuite-prefix.pch"; sourceTree = "<group>"; };
+		8A2D6392B74FDDFD634C1D5D15720DAB /* M13ProgressViewMetro.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = M13ProgressViewMetro.m; path = Classes/ProgressViews/M13ProgressViewMetro.m; sourceTree = "<group>"; };
+		8E3CAF77EA9E6E8632DB12DD8E7911A9 /* CoreImage.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreImage.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/CoreImage.framework; sourceTree = DEVELOPER_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		98A07A9E2EFDC40D814CFC3E62A90CFF /* M13ProgressViewMetro.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = M13ProgressViewMetro.h; path = Classes/ProgressViews/M13ProgressViewMetro.h; sourceTree = "<group>"; };
+		9FDD83F805614E3C7266567D867AB9E0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		A5F6E1447C0CC512AD9D323978E8254D /* Pods-AVA Recorder-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AVA Recorder-resources.sh"; sourceTree = "<group>"; };
+		A76976D39579D04F219B76E6ECC59C27 /* Pods-AVA Recorder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AVA Recorder.release.xcconfig"; sourceTree = "<group>"; };
+		A7E2554FBCD28EAB2A8AC6AEE725C460 /* M13ProgressViewStripedBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = M13ProgressViewStripedBar.m; path = Classes/ProgressViews/M13ProgressViewStripedBar.m; sourceTree = "<group>"; };
+		AB8631F7601C985BE20E5669B1AA16DC /* M13ProgressViewRing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = M13ProgressViewRing.h; path = Classes/ProgressViews/M13ProgressViewRing.h; sourceTree = "<group>"; };
+		AC10E6C4EAB2DE597552CCAE68DAE9FC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		B1D96B52331AB5E54ED576611AF3E38C /* M13ProgressSuite.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = M13ProgressSuite.xcconfig; sourceTree = "<group>"; };
+		B972A2A0FCA73270AB681313636889A5 /* M13ProgressViewImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = M13ProgressViewImage.h; path = Classes/ProgressViews/M13ProgressViewImage.h; sourceTree = "<group>"; };
+		B9F274191D6723C714DBED7013032670 /* Pods-AVA Recorder-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AVA Recorder-frameworks.sh"; sourceTree = "<group>"; };
+		CB18B68AD961459176D37DD2436A83BB /* M13ProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = M13ProgressHUD.m; path = Classes/HUD/M13ProgressHUD.m; sourceTree = "<group>"; };
+		CCFE8913FF732302E8DF1AC7A0845871 /* M13ProgressView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = M13ProgressView.h; path = Classes/ProgressViews/M13ProgressView.h; sourceTree = "<group>"; };
+		CDF149A611C414433109F784E363DFD5 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Accelerate.framework; sourceTree = DEVELOPER_DIR; };
+		CF9ADE9C6DCF365C0FA1639E385390C2 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ImageEffects.h"; path = "Classes/HUD/UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		D3C3FE73E71F5979B6D4DA995BF3C7BB /* M13ProgressViewSegmentedRing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = M13ProgressViewSegmentedRing.m; path = Classes/ProgressViews/M13ProgressViewSegmentedRing.m; sourceTree = "<group>"; };
+		D56FAD1C9B520C1675FEBABA91267EDB /* Pods-AVA Recorder-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AVA Recorder-acknowledgements.markdown"; sourceTree = "<group>"; };
+		DC1B4C19904F21380215A46BB63C0614 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ImageEffects.m"; path = "Classes/HUD/UIImage+ImageEffects.m"; sourceTree = "<group>"; };
+		DE2E9CF7ACA5C17E1B229AF01B976209 /* M13ProgressViewLetterpress.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = M13ProgressViewLetterpress.h; path = Classes/ProgressViews/M13ProgressViewLetterpress.h; sourceTree = "<group>"; };
+		E57C8C2E69B48448FE5E948355809CEC /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E97D18344148FA05F7E20B528BB593E1 /* UINavigationController+M13ProgressViewBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationController+M13ProgressViewBar.h"; path = "Classes/NavigationController/UINavigationController+M13ProgressViewBar.h"; sourceTree = "<group>"; };
+		EA98B403462EEEA918539D11E71A3527 /* M13ProgressViewFilteredImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = M13ProgressViewFilteredImage.h; path = Classes/ProgressViews/M13ProgressViewFilteredImage.h; sourceTree = "<group>"; };
+		EBC37A06A1C278111F86D00B0170FA44 /* M13ProgressViewRing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = M13ProgressViewRing.m; path = Classes/ProgressViews/M13ProgressViewRing.m; sourceTree = "<group>"; };
+		EDD8914756BD0E191EB130503595E802 /* M13ProgressViewMetroDotPolygon.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = M13ProgressViewMetroDotPolygon.m; path = Classes/ProgressViews/M13ProgressViewMetroDotPolygon.m; sourceTree = "<group>"; };
+		F096BEE4CD6711A76777B63D224A3096 /* M13ProgressViewPie.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = M13ProgressViewPie.h; path = Classes/ProgressViews/M13ProgressViewPie.h; sourceTree = "<group>"; };
+		F2643C6CDD86AF593FBEB570C9B554E2 /* UINavigationController+M13ProgressViewBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+M13ProgressViewBar.m"; path = "Classes/NavigationController/UINavigationController+M13ProgressViewBar.m"; sourceTree = "<group>"; };
+		F991B2D957505BA75D14F5DE33569E98 /* M13ProgressViewMetroDotPolygon.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = M13ProgressViewMetroDotPolygon.h; path = Classes/ProgressViews/M13ProgressViewMetroDotPolygon.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3CC67E767A0BDC077552344530C2E810 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A3B1696C79DC77240661DF398681AF5 /* Accelerate.framework in Frameworks */,
+				9A29DCD381E5E009BE98400CC426768A /* CoreGraphics.framework in Frameworks */,
+				AA3710FB5A3D357B38A3B62B1612CE6A /* CoreImage.framework in Frameworks */,
+				D6725892DAC54BB0A45C4BBC39531A6E /* Foundation.framework in Frameworks */,
+				AA802524153083E8D1274439E9E51615 /* QuartzCore.framework in Frameworks */,
+				59D998EB0981481B2F8DCB4E2E49DFB5 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		49924668BE38FC34AC40FDF1A2371926 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8764F43BF496466A81D854D37945E67 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0F75DF6C7C5F002280EC53F48E80B587 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FFC6E8DE42139E5BA692CACED7E3AB3B /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1A87700AD52E9895B755CC6AA988E39E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F28F21676B4F74EED09D5027B018DB3C /* Pods-AVA Recorder */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3B9D77A2147C915A052118FCAA3AE518 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				50350DC941EC2286469539D5AF2DBF47 /* libM13ProgressSuite.a */,
+				4141DECBDC0D7532D3FBE4E9B8BB918F /* libPods-AVA Recorder.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		50FA51B52B256926CAFF0236C5D5CE11 /* M13ProgressSuite */ = {
+			isa = PBXGroup;
+			children = (
+				76CFB6E6A95AA31572C54EFC08C6FDDE /* M13ProgressConsole.h */,
+				259C9C849B2FAE53B92FF7BDDA021BB1 /* M13ProgressConsole.m */,
+				10C77057036EE504DC52B895BC0B9073 /* M13ProgressHUD.h */,
+				CB18B68AD961459176D37DD2436A83BB /* M13ProgressHUD.m */,
+				CCFE8913FF732302E8DF1AC7A0845871 /* M13ProgressView.h */,
+				20225408D2B499C66004AA5B6C2B2985 /* M13ProgressView.m */,
+				83FA7B6AF272603549F315C02B047F3C /* M13ProgressViewBar.h */,
+				79B56D0B7F073303B53E3310956F0481 /* M13ProgressViewBar.m */,
+				5D835452CF132F96ED3455D0D2060672 /* M13ProgressViewBorderedBar.h */,
+				63F660C46A715602DB83F46AB0AF9655 /* M13ProgressViewBorderedBar.m */,
+				EA98B403462EEEA918539D11E71A3527 /* M13ProgressViewFilteredImage.h */,
+				0CBD90775A1953FE62BF041E6E560171 /* M13ProgressViewFilteredImage.m */,
+				B972A2A0FCA73270AB681313636889A5 /* M13ProgressViewImage.h */,
+				0D80A53A9B9AD050BE02D74270E735B5 /* M13ProgressViewImage.m */,
+				DE2E9CF7ACA5C17E1B229AF01B976209 /* M13ProgressViewLetterpress.h */,
+				4F19EFE9B4B7D2CD10B75D2F6D743239 /* M13ProgressViewLetterpress.m */,
+				98A07A9E2EFDC40D814CFC3E62A90CFF /* M13ProgressViewMetro.h */,
+				8A2D6392B74FDDFD634C1D5D15720DAB /* M13ProgressViewMetro.m */,
+				F991B2D957505BA75D14F5DE33569E98 /* M13ProgressViewMetroDotPolygon.h */,
+				EDD8914756BD0E191EB130503595E802 /* M13ProgressViewMetroDotPolygon.m */,
+				F096BEE4CD6711A76777B63D224A3096 /* M13ProgressViewPie.h */,
+				04437869F692974AC92A63FD2A7F350D /* M13ProgressViewPie.m */,
+				4ED51E964FBF87F94F07E63E70173C1C /* M13ProgressViewRadiative.h */,
+				5BA0C39D3E4305EB1ED515708D194963 /* M13ProgressViewRadiative.m */,
+				AB8631F7601C985BE20E5669B1AA16DC /* M13ProgressViewRing.h */,
+				EBC37A06A1C278111F86D00B0170FA44 /* M13ProgressViewRing.m */,
+				8369A0CC442B624543D56B7E44DA22C4 /* M13ProgressViewSegmentedBar.h */,
+				588E1BFFABF04DAF0D8D45A33070264F /* M13ProgressViewSegmentedBar.m */,
+				360C735ADB57A0935E1C3FDF65EB6D56 /* M13ProgressViewSegmentedRing.h */,
+				D3C3FE73E71F5979B6D4DA995BF3C7BB /* M13ProgressViewSegmentedRing.m */,
+				7210A0DCDBA3ADBC98DB028EDD07AD24 /* M13ProgressViewStripedBar.h */,
+				A7E2554FBCD28EAB2A8AC6AEE725C460 /* M13ProgressViewStripedBar.m */,
+				174BBB2D0F05684D61DE95A84B45E71C /* UIApplication+M13ProgressSuite.h */,
+				791B133DA61C13409E8D1FDE5ED06308 /* UIApplication+M13ProgressSuite.m */,
+				CF9ADE9C6DCF365C0FA1639E385390C2 /* UIImage+ImageEffects.h */,
+				DC1B4C19904F21380215A46BB63C0614 /* UIImage+ImageEffects.m */,
+				E97D18344148FA05F7E20B528BB593E1 /* UINavigationController+M13ProgressViewBar.h */,
+				F2643C6CDD86AF593FBEB570C9B554E2 /* UINavigationController+M13ProgressViewBar.m */,
+				ECECB42442A1F1162795030541946182 /* Support Files */,
+			);
+			name = M13ProgressSuite;
+			path = M13ProgressSuite;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				0F75DF6C7C5F002280EC53F48E80B587 /* Frameworks */,
+				814113D1CF02F7B6E4E093841956592C /* Pods */,
+				3B9D77A2147C915A052118FCAA3AE518 /* Products */,
+				1A87700AD52E9895B755CC6AA988E39E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		814113D1CF02F7B6E4E093841956592C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				50FA51B52B256926CAFF0236C5D5CE11 /* M13ProgressSuite */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ECECB42442A1F1162795030541946182 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B1D96B52331AB5E54ED576611AF3E38C /* M13ProgressSuite.xcconfig */,
+				80F486C6B48FD998B851B5E9FBC7E695 /* M13ProgressSuite-dummy.m */,
+				857ABC5EE3228B10072033C92BD288A6 /* M13ProgressSuite-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/M13ProgressSuite";
+			sourceTree = "<group>";
+		};
+		F28F21676B4F74EED09D5027B018DB3C /* Pods-AVA Recorder */ = {
+			isa = PBXGroup;
+			children = (
+				D56FAD1C9B520C1675FEBABA91267EDB /* Pods-AVA Recorder-acknowledgements.markdown */,
+				0728D9FE4D5300083E7BA0918BC13045 /* Pods-AVA Recorder-acknowledgements.plist */,
+				5C15C0D67F14B747139E2EE5D1D6DDE9 /* Pods-AVA Recorder-dummy.m */,
+				B9F274191D6723C714DBED7013032670 /* Pods-AVA Recorder-frameworks.sh */,
+				A5F6E1447C0CC512AD9D323978E8254D /* Pods-AVA Recorder-resources.sh */,
+				2780A277EE25BDB0760F5165E6493BD8 /* Pods-AVA Recorder.debug.xcconfig */,
+				A76976D39579D04F219B76E6ECC59C27 /* Pods-AVA Recorder.release.xcconfig */,
+			);
+			name = "Pods-AVA Recorder";
+			path = "Target Support Files/Pods-AVA Recorder";
+			sourceTree = "<group>";
+		};
+		FFC6E8DE42139E5BA692CACED7E3AB3B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CDF149A611C414433109F784E363DFD5 /* Accelerate.framework */,
+				19284432F4F63CE2CF214F8A2526D099 /* CoreGraphics.framework */,
+				8E3CAF77EA9E6E8632DB12DD8E7911A9 /* CoreImage.framework */,
+				AC10E6C4EAB2DE597552CCAE68DAE9FC /* Foundation.framework */,
+				9FDD83F805614E3C7266567D867AB9E0 /* QuartzCore.framework */,
+				E57C8C2E69B48448FE5E948355809CEC /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		EC5AAAA93E19969D88570EA3E023DF62 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DDF77D6617B736D4D5FE616FBA9BB1EE /* M13ProgressConsole.h in Headers */,
+				37AD6D1BC7A7B63C2BA7B38DB1B7A1F5 /* M13ProgressHUD.h in Headers */,
+				FB5D1E8F50E7878F89EE4946AF10D734 /* M13ProgressView.h in Headers */,
+				9A1820FEBBF042DC6D946AEA50BB12A1 /* M13ProgressViewBar.h in Headers */,
+				AA8657572F1AF74F280B03F644129657 /* M13ProgressViewBorderedBar.h in Headers */,
+				8C4F5BEB11C839B2E36045A8A96BD4CE /* M13ProgressViewFilteredImage.h in Headers */,
+				2FA1225772B1465912FC130D9AA70512 /* M13ProgressViewImage.h in Headers */,
+				ED6ECDAC666C83CB13B7ECAB19641C20 /* M13ProgressViewLetterpress.h in Headers */,
+				F462278FF31AADADC6C5803231C48F4C /* M13ProgressViewMetro.h in Headers */,
+				A0ACA8BFF6A0BF1FF85EF113B91335A6 /* M13ProgressViewMetroDotPolygon.h in Headers */,
+				4767F697CD3F2B59EF4E421FABE74D6E /* M13ProgressViewPie.h in Headers */,
+				284C694DEC772709AC30C4F716679890 /* M13ProgressViewRadiative.h in Headers */,
+				B7E3D801920F436FDDDA9B49730D4E1B /* M13ProgressViewRing.h in Headers */,
+				2F6085166A2CDCE306BBE2DDDF737BE8 /* M13ProgressViewSegmentedBar.h in Headers */,
+				CC598A2A06D29B9BDD63D5282D942296 /* M13ProgressViewSegmentedRing.h in Headers */,
+				D5EAB6FF212B2BE8AA8814281F74523A /* M13ProgressViewStripedBar.h in Headers */,
+				3CE218638D274EB343D3800A33FA7569 /* UIApplication+M13ProgressSuite.h in Headers */,
+				98FF79A5FD2EBF34ABE949E78EFE7803 /* UIImage+ImageEffects.h in Headers */,
+				5F5F82F0074D04D16AB53247CEB6C37C /* UINavigationController+M13ProgressViewBar.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		7A1DBFEFBD1BADC3B8AD1AA34704E9FC /* Pods-AVA Recorder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F0A8787E68B9947713F5654A5142091D /* Build configuration list for PBXNativeTarget "Pods-AVA Recorder" */;
+			buildPhases = (
+				67844200F8F1F00E37C912DDA19CA2C3 /* Sources */,
+				49924668BE38FC34AC40FDF1A2371926 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F4C59F5AC85C016032047EAFAD89C30A /* PBXTargetDependency */,
+			);
+			name = "Pods-AVA Recorder";
+			productName = "Pods-AVA Recorder";
+			productReference = 4141DECBDC0D7532D3FBE4E9B8BB918F /* libPods-AVA Recorder.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		BDB45DD6D41488A346190E17DEF63592 /* M13ProgressSuite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0E4219F8F2B7C117EB0957B505EB1ABE /* Build configuration list for PBXNativeTarget "M13ProgressSuite" */;
+			buildPhases = (
+				105B581059F67A26B2F9F8BD36301DB0 /* Sources */,
+				3CC67E767A0BDC077552344530C2E810 /* Frameworks */,
+				EC5AAAA93E19969D88570EA3E023DF62 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = M13ProgressSuite;
+			productName = M13ProgressSuite;
+			productReference = 50350DC941EC2286469539D5AF2DBF47 /* libM13ProgressSuite.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 3B9D77A2147C915A052118FCAA3AE518 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BDB45DD6D41488A346190E17DEF63592 /* M13ProgressSuite */,
+				7A1DBFEFBD1BADC3B8AD1AA34704E9FC /* Pods-AVA Recorder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		105B581059F67A26B2F9F8BD36301DB0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49277DC95F76C6B3A6A67151D1385500 /* M13ProgressConsole.m in Sources */,
+				23411D00373CFFEC7CFD761262A7796F /* M13ProgressHUD.m in Sources */,
+				8A42701E6AF396D383ECC67C09567200 /* M13ProgressSuite-dummy.m in Sources */,
+				2DE48183D5331B20279736F9D8F01AFC /* M13ProgressView.m in Sources */,
+				38D8BB7592EE13B39C55122AE5C81D0E /* M13ProgressViewBar.m in Sources */,
+				EFB1851BB5D96DC9C95461301C1F73FA /* M13ProgressViewBorderedBar.m in Sources */,
+				3E44CBB7E0BE7F56C86EE4F69C0A092A /* M13ProgressViewFilteredImage.m in Sources */,
+				0085D3DD26B2CB09AB89DBFC05A175D1 /* M13ProgressViewImage.m in Sources */,
+				C249D839B536D71A5EA6A4BBF0132BE3 /* M13ProgressViewLetterpress.m in Sources */,
+				A16EC392822DEC34F1F870F7CFCBC0C7 /* M13ProgressViewMetro.m in Sources */,
+				87F5FC147F2D6F31849F6746D53FE827 /* M13ProgressViewMetroDotPolygon.m in Sources */,
+				B045685B5B30B139A07176B585031C71 /* M13ProgressViewPie.m in Sources */,
+				DC61E79DB7C29A04BDBE32E63AA1D99F /* M13ProgressViewRadiative.m in Sources */,
+				DB87A56225045BF6975B1515BBBFF2C8 /* M13ProgressViewRing.m in Sources */,
+				43EF520D16B42A522357F9BDF7EAC1DD /* M13ProgressViewSegmentedBar.m in Sources */,
+				1A124943AF21807C71BDA295135765B1 /* M13ProgressViewSegmentedRing.m in Sources */,
+				92A9A46A9A1330BD19A08804FAA0D9EE /* M13ProgressViewStripedBar.m in Sources */,
+				06BCAC664D0E7E977CF43150143D11CE /* UIApplication+M13ProgressSuite.m in Sources */,
+				B2724C3CFE9C77EC8E6980AFF3869AB5 /* UIImage+ImageEffects.m in Sources */,
+				675F929CA37E9701E3630DE6BC15A57F /* UINavigationController+M13ProgressViewBar.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67844200F8F1F00E37C912DDA19CA2C3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7B57B376AC8E3D7286AF7CE1C810B83B /* Pods-AVA Recorder-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F4C59F5AC85C016032047EAFAD89C30A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = M13ProgressSuite;
+			target = BDB45DD6D41488A346190E17DEF63592 /* M13ProgressSuite */;
+			targetProxy = 10C95C62F584F624E214B99E226FF9F7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		015A368F878AC3E2CEAE21DDE8026304 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		31A616FBF617626BD56A5347E486256E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1D96B52331AB5E54ED576611AF3E38C /* M13ProgressSuite.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/M13ProgressSuite/M13ProgressSuite-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		44CDBB6D11DE06DB64D6268622BDC47E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C91AEA1107D07611D39E283267B77651 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2780A277EE25BDB0760F5165E6493BD8 /* Pods-AVA Recorder.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		EF22F4DA416F9F2C51FFC1DF0EA0A246 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A76976D39579D04F219B76E6ECC59C27 /* Pods-AVA Recorder.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F78D349D16097323BF2F92B3C3167992 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B1D96B52331AB5E54ED576611AF3E38C /* M13ProgressSuite.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/M13ProgressSuite/M13ProgressSuite-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0E4219F8F2B7C117EB0957B505EB1ABE /* Build configuration list for PBXNativeTarget "M13ProgressSuite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F78D349D16097323BF2F92B3C3167992 /* Debug */,
+				31A616FBF617626BD56A5347E486256E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				015A368F878AC3E2CEAE21DDE8026304 /* Debug */,
+				44CDBB6D11DE06DB64D6268622BDC47E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F0A8787E68B9947713F5654A5142091D /* Build configuration list for PBXNativeTarget "Pods-AVA Recorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C91AEA1107D07611D39E283267B77651 /* Debug */,
+				EF22F4DA416F9F2C51FFC1DF0EA0A246 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
