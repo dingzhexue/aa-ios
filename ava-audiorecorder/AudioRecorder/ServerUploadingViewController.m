@@ -247,13 +247,96 @@ int selectedCollectionId;
 //                                                           
                                                        }
                                                        failure:^(NSURLSessionDataTask *task, NSError *error) {
-//                                                           [UIAlertView showAlertViewForTaskWithErrorOnCompletion:task delegate:nil];
-                                                           NSLog(@"Error retrieving collections");
-                                                           NSLog(@"%@", [error localizedDescription]);
-                                                           NSLog(@"%@", [error localizedFailureReason]);
+                                                           
+                                                           [self refreshToServer];
+                                                           
                                                        }];
 
 }
+
+
+- (void)secondCollectionRequestToServer
+{
+    
+    self.connectTask = [[ServerSession collectionSession] POST:URL_COLLECTION_REQUEST
+                                                    parameters:nil
+                                                       success:^(NSURLSessionDataTask *task, id collections) {
+                                                           NSLog(@"Collection Response: %@", collections);
+                                                           
+                                                           NSMutableArray *ids = [NSMutableArray array];
+                                                           NSMutableArray *names = [NSMutableArray array];
+                                                           for (NSArray *collection in collections) {
+                                                               [ids addObject:[collection valueForKey:@"id"]];
+                                                               [names addObject:[collection valueForKey:@"name"]];
+                                                               
+                                                           }
+                                                           
+                                                           _collectionArray = collections;
+                                                           collectionIdArray = ids;
+                                                           
+                                                           // Reload collection table on response from server
+                                                           [self reloadCollectionTable];
+                                                           //get the saved row from the previously selected cell
+                                                           lastIndexPath = [[NSUserDefaults standardUserDefaults]integerForKey:@"selectedRow"];
+                                                           //create an indexPath from the previously selected row
+                                                           selectedIndexPath = [NSIndexPath indexPathForRow:lastIndexPath inSection:0];
+                                                           //select the previously selected row
+                                                           [_collectionTableView selectRowAtIndexPath:selectedIndexPath animated:YES scrollPosition:UITableViewScrollPositionNone];
+                                                           //notify the delegate that the tableview cell was selected.
+                                                           [[_collectionTableView delegate]tableView:_collectionTableView didSelectRowAtIndexPath:selectedIndexPath];
+                                                           //create new reference of cell with the last selected index path.
+                                                           UITableViewCell *cell = [self.collectionTableView cellForRowAtIndexPath:selectedIndexPath];
+                                                           [cell setSelected:YES animated:YES];
+                                                           // Make custom accessoryview
+                                                           UIImageView *imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"red_tick_btn.png"]];
+                                                           imageView.frame = CGRectMake(0, 0, 20, 20);
+                                                           //add accessory view to previously selected cell
+                                                           cell.accessoryView = imageView;
+                                                           //set start upload button to visible since a cell is automatically selected
+                                                           _startUploadButton.hidden = NO;
+                                                           //
+                                                       }
+                                                       failure:^(NSURLSessionDataTask *task, NSError *error) {
+                                                           //                                                           [UIAlertView showAlertViewForTaskWithErrorOnCompletion:task delegate:nil];
+                                                           NSLog(@"Error retrieving collections");
+                                                           NSLog(@"%@", [error localizedDescription]);
+                                                           NSLog(@"%@", [error localizedFailureReason]);
+                                                           
+                                                          
+                                                       }];
+    
+}
+
+
+-(void)refreshToServer
+{
+    NSString *username;
+    NSString *password;
+
+    username = [[UserDefaults sharedUserDefaults]signInUserName];
+    password = [[UserDefaults sharedUserDefaults]signInPassword];
+    
+    
+    self.connectTask = [[ServerSession loginSession] POST:URL_LOGIN
+                                               parameters:nil
+                                constructingBodyWithBlock:^(id <AFMultipartFormData> formData) {
+                                    [formData appendPartWithFormData:[username dataUsingEncoding:NSUTF8StringEncoding] name:@"login"];
+                                    [formData appendPartWithFormData:[password dataUsingEncoding:NSUTF8StringEncoding] name:@"password"];
+                                }
+                                                  success:^(NSURLSessionDataTask *task, id responseObject) {
+                                                      
+                                                      [self secondCollectionRequestToServer];
+                                                      
+                                                  }
+                                                  failure:^(NSURLSessionDataTask *task, NSError *error) {
+                                                      
+                                                      [self performSegueWithIdentifier:@"changeUserSegue" sender:self];
+                                                      
+                                                  }];
+
+    
+}
+
 
 
 #pragma mark - Reload Table

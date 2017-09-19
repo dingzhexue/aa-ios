@@ -25,7 +25,6 @@
 -(void)setDirections2:(NSString*)directions2;
 -(void)setDirections3:(NSString*)directions3;
 -(void)setHeading:(NSString*)heading;
--(void)setTitle:(NSString *)title;
 -(void)setBarButton:(NSString*)set;
 -(void)setMarkImage;
 -(void)reset;

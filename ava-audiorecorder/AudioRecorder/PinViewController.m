@@ -61,81 +61,167 @@
                                                                     NSForegroundColorAttributeName: _config.navigationBarTitleColor};
     self.title = _config.navigationBarTitle;
     
-    _titleLabel.frame = CGRectMake(0, 85, self.view.frame.size.width, 30);
-    _titleLabel.font = _config.titleFont;
-    _titleLabel.textColor = _config.descriptionColor;
     
-    _titleLabel.textAlignment = NSTextAlignmentCenter;
-    _titleLabel.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-    
-    [self.view addSubview:_titleLabel];
-    
-    
-    _directions.frame = CGRectMake(15, 70, self.view.frame.size.width - 30, 90);
-    _directions.font = _config.instructionsFont;
-    _directions.textColor = _config.descriptionColor;
-    _directions.numberOfLines = 2;
-    _directions.textAlignment = NSTextAlignmentCenter;
-    _directions.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-    [self.view addSubview:_directions];
-    
-    _directions2.frame = CGRectMake(15, 95, self.view.frame.size.width -30, 120);
-    _directions2.font = [_config.instructionsFont fontWithSize:16];
-    _directions2.textColor = [UIColor redColor];
-    _directions2.numberOfLines = 2;
-    _directions2.textAlignment = NSTextAlignmentCenter;
-    _directions2.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-    [self.view addSubview:_directions2];
-    
-    
-    _directions3.frame = CGRectMake(15, 95, self.view.frame.size.width - 30, 90);
-    _directions3.font = _config.instructionsFont;
-    _directions3.textColor = _config.descriptionColor;
-    _directions3.numberOfLines = 2;
-    _directions3.textAlignment = NSTextAlignmentCenter;
-    _directions3.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-    [self.view addSubview:_directions3];
-    
-    
-    _error.frame = CGRectMake(0, 210, 0, 0); // size set when text is set
-    _error.font = _config.errorFont;
-    _error.textColor = _config.errorForegroundColor;
-    _error.backgroundColor = _config.errorBackgroundColor;
-    _error.textAlignment = NSTextAlignmentCenter;
-    _error.layer.cornerRadius = 4;
-    _error.clipsToBounds = YES;
-    _error.alpha = 0;
-    _error.numberOfLines = 0;
-    _error.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
-    [self.view addSubview:_error];
-    
-    _markView.frame = CGRectMake((self.view.frame.size.width - 40)/2, 75, 40, 40);
-    [self.view addSubview:_markView];
-    
-    CGFloat y_padding = 180;
-    CGFloat itemWidth = 24;
-    CGFloat space = 20;
-    CGFloat totalWidth = (itemWidth * 4) + (space * 3);
-    CGFloat x_padding = (self.view.bounds.size.width - totalWidth) / 4;
-    
-    UIView *container = [[UIView alloc] initWithFrame:CGRectMake(x_padding, y_padding, totalWidth, itemWidth)];
-    container.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
-    for (int i = 0; i < 6; i++) {
-        PinField* field = [[PinField alloc] initWithFrame:CGRectMake(((itemWidth + space) * i), 0, itemWidth, itemWidth) config:_config];
-        UITapGestureRecognizer* singleFingerTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];
-        [field addGestureRecognizer:singleFingerTap];
-        [container addSubview:field];
-        [_textFields addObject:field];
+    if (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
+    {
+        _titleLabel.frame = CGRectMake(0, 85, self.view.frame.size.width, 30);
+        _titleLabel.font = _config.titleFont;
+        _titleLabel.textColor = _config.descriptionColor;
+        
+        _titleLabel.textAlignment = NSTextAlignmentCenter;
+        _titleLabel.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+        
+        [self.view addSubview:_titleLabel];
+        
+        
+        _directions.frame = CGRectMake(15, 140, self.view.frame.size.width - 30, 90);
+        _directions.font = _config.iPad_instructionsFont;
+        _directions.textColor = _config.descriptionColor;
+        _directions.numberOfLines = 2;
+        _directions.textAlignment = NSTextAlignmentCenter;
+        _directions.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+        [self.view addSubview:_directions];
+        
+        _directions2.frame = CGRectMake(15, 160, self.view.frame.size.width -30, 120);
+        _directions2.font = _config.iPad_instructionsFont;
+        _directions2.textColor = [UIColor redColor];
+        _directions2.numberOfLines = 2;
+        _directions2.textAlignment = NSTextAlignmentCenter;
+        _directions2.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+        [self.view addSubview:_directions2];
+        
+        
+        _directions3.frame = CGRectMake(15, 160, self.view.frame.size.width - 30, 120);
+        _directions3.font = _config.iPad_instructionsFont;
+        _directions3.textColor = _config.descriptionColor;
+        _directions3.numberOfLines = 2;
+        _directions3.textAlignment = NSTextAlignmentCenter;
+        _directions3.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+        [self.view addSubview:_directions3];
+        
+        
+        _error.frame = CGRectMake(0, 360, 0, 0); // size set when text is set
+        _error.font = _config.errorFont;
+        _error.textColor = _config.errorForegroundColor;
+        _error.backgroundColor = _config.errorBackgroundColor;
+        _error.textAlignment = NSTextAlignmentCenter;
+        _error.layer.cornerRadius = 4;
+        _error.clipsToBounds = YES;
+        _error.alpha = 0;
+        _error.numberOfLines = 0;
+        _error.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
+        [self.view addSubview:_error];
+        
+        _markView.frame = CGRectMake((self.view.frame.size.width - 80)/2, 100, 80, 80);
+        [self.view addSubview:_markView];
+        
+        CGFloat y_padding = 275;
+        CGFloat itemWidth = 50;
+        CGFloat space = 50;
+        CGFloat totalWidth = (itemWidth * 4) + (space * 3);
+        CGFloat x_padding = (self.view.bounds.size.width - totalWidth) / 4;
+        
+        UIView *container = [[UIView alloc] initWithFrame:CGRectMake(x_padding, y_padding, totalWidth, itemWidth)];
+        container.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
+        for (int i = 0; i < 6; i++) {
+            PinField* field = [[PinField alloc] initWithFrame:CGRectMake(((itemWidth + space) * i), 0, itemWidth, itemWidth) config:_config];
+            UITapGestureRecognizer* singleFingerTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];
+            [field addGestureRecognizer:singleFingerTap];
+            [container addSubview:field];
+            [_textFields addObject:field];
+        }
+        [self.view addSubview:container];
+        
+        
+        _input = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
+        [_input setDelegate:self];
+        [_input addTarget:self action:@selector(editingChanged:) forControlEvents:UIControlEventEditingChanged];
+        _input.keyboardType = UIKeyboardTypeNumberPad;
+        _input.keyboardAppearance = _config.inputKeyboardAppearance;
+        [self.view addSubview:_input];
     }
-    [self.view addSubview:container];
+    else
+    {
+        
+        _titleLabel.frame = CGRectMake(0, 85, self.view.frame.size.width, 30);
+        _titleLabel.font = _config.titleFont;
+        _titleLabel.textColor = _config.descriptionColor;
+        
+        _titleLabel.textAlignment = NSTextAlignmentCenter;
+        _titleLabel.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+        
+        [self.view addSubview:_titleLabel];
+        
+        
+        _directions.frame = CGRectMake(15, 70, self.view.frame.size.width - 30, 90);
+        _directions.font = _config.instructionsFont;
+        _directions.textColor = _config.descriptionColor;
+        _directions.numberOfLines = 2;
+        _directions.textAlignment = NSTextAlignmentCenter;
+        _directions.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+        [self.view addSubview:_directions];
+        
+        _directions2.frame = CGRectMake(15, 95, self.view.frame.size.width -30, 120);
+        _directions2.font = [_config.instructionsFont fontWithSize:16];
+        _directions2.textColor = [UIColor redColor];
+        _directions2.numberOfLines = 2;
+        _directions2.textAlignment = NSTextAlignmentCenter;
+        _directions2.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+        [self.view addSubview:_directions2];
+        
+        
+        _directions3.frame = CGRectMake(15, 95, self.view.frame.size.width - 30, 90);
+        _directions3.font = _config.instructionsFont;
+        _directions3.textColor = _config.descriptionColor;
+        _directions3.numberOfLines = 2;
+        _directions3.textAlignment = NSTextAlignmentCenter;
+        _directions3.autoresizingMask = UIViewAutoresizingFlexibleWidth;
+        [self.view addSubview:_directions3];
+        
+        
+        _error.frame = CGRectMake(0, 210, 0, 0); // size set when text is set
+        _error.font = _config.errorFont;
+        _error.textColor = _config.errorForegroundColor;
+        _error.backgroundColor = _config.errorBackgroundColor;
+        _error.textAlignment = NSTextAlignmentCenter;
+        _error.layer.cornerRadius = 4;
+        _error.clipsToBounds = YES;
+        _error.alpha = 0;
+        _error.numberOfLines = 0;
+        _error.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
+        [self.view addSubview:_error];
+        
+        _markView.frame = CGRectMake((self.view.frame.size.width - 40)/2, 75, 40, 40);
+        [self.view addSubview:_markView];
+        
+        CGFloat y_padding = 180;
+        CGFloat itemWidth = 24;
+        CGFloat space = 20;
+        CGFloat totalWidth = (itemWidth * 4) + (space * 3);
+        CGFloat x_padding = (self.view.bounds.size.width - totalWidth) / 4;
+        
+        UIView *container = [[UIView alloc] initWithFrame:CGRectMake(x_padding, y_padding, totalWidth, itemWidth)];
+        container.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin;
+        for (int i = 0; i < 6; i++) {
+            PinField* field = [[PinField alloc] initWithFrame:CGRectMake(((itemWidth + space) * i), 0, itemWidth, itemWidth) config:_config];
+            UITapGestureRecognizer* singleFingerTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(handleSingleTap:)];
+            [field addGestureRecognizer:singleFingerTap];
+            [container addSubview:field];
+            [_textFields addObject:field];
+        }
+        [self.view addSubview:container];
+        
+        
+        _input = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
+        [_input setDelegate:self];
+        [_input addTarget:self action:@selector(editingChanged:) forControlEvents:UIControlEventEditingChanged];
+        _input.keyboardType = UIKeyboardTypeNumberPad;
+        _input.keyboardAppearance = _config.inputKeyboardAppearance;
+        [self.view addSubview:_input];
+        
+    }
     
     
-    _input = [[UITextField alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
-    [_input setDelegate:self];
-    [_input addTarget:self action:@selector(editingChanged:) forControlEvents:UIControlEventEditingChanged];
-    _input.keyboardType = UIKeyboardTypeNumberPad;
-    _input.keyboardAppearance = _config.inputKeyboardAppearance;
-    [self.view addSubview:_input];
     [_input becomeFirstResponder];
     
 }

@@ -26,7 +26,9 @@
         self.inputKeyboardAppearance = UIKeyboardAppearanceDefault;
         self.titleFont = [UIFont systemFontOfSize:20];
         self.errorFont = [UIFont systemFontOfSize:14];
+        self.iPad_errorFont = [UIFont systemFontOfSize:20];
         self.instructionsFont = [UIFont systemFontOfSize:16];
+        self.iPad_instructionsFont = [UIFont systemFontOfSize:22];
         self.navigationBarTitle = @"";
         self.navigationBarFont = [UIFont systemFontOfSize:16];
         self.navigationBarTitleColor = [UIColor darkTextColor];

@@ -74,11 +74,14 @@
  *  The font used for instructions.
  */
 @property (nonatomic,strong) UIFont *instructionsFont;
+@property (nonatomic,strong) UIFont *iPad_instructionsFont;
 
 /**
  *  The font used for Error.
  */
 @property (nonatomic,strong) UIFont *errorFont;
+
+@property (nonatomic,strong) UIFont *iPad_errorFont;
 
 /**
  *  The Navigation Bar Title.

@@ -153,7 +153,11 @@
     self.totalTimeLabel.text = timeFormatter.durationString;//audioData.audioDuration;
     self.nameOnServer.text = [_audioData.nameOnServer stringByDeletingPathExtension];
     
-    self.sliderControl.maximumValue = _audioData.audioDuration;
+    
+    if(_audioData.audioDuration != 0){
+        self.sliderControl.maximumValue = _audioData.audioDuration;
+    }
+    
     self.uploadStatus = _audioData.uploadStatus;
     if (_uploadStatus) {
         self.uploadedDateLabel.text = [_audioData.uploadedDate dateStringWithFormatterString:DATE_FORMATTER_STRING_PLAYBACK timeZone:nil];
